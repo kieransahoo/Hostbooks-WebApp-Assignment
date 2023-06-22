@@ -12,13 +12,9 @@ Hostbooks Web-App Test
 3. Installation
 4. Usage
 5. API Endpoints
-6. Testing
-7. Deployment
-8. Contributing
-9. Versioning
-10. Authors
-11. License
-12. Acknowledgments
+6. Deployment
+8. Authors
+9. Sample Demo - Video Link
 
 ---
 
@@ -45,13 +41,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 **# Installation**
 
-For Backend Springboot-Angular :
+### For Backend Springboot-Angular :
 1) Clone this repository to local machine and open file location (HostbooksWeb-app)
 2) Load Maven Propery in order to run springboot appplication 
 3) Change Database properties in `application.properties`
 4) Run applicationFile 
 
-For Frontend-Angular
+### For Frontend-Angular
 1. open file location `cd hostbooks-webapp-angular`
 2. run using command `ng serve`
 
@@ -60,7 +56,7 @@ Note : Run Springboot application and then angular application in your preffered
 
 **# Usage**
 
-Frontend -Angular
+### Frontend -Angular
 1. To install angular globally(cli.angular.io)
    ```npm install -g @angular/cli```
 2.To Create Project 
@@ -70,13 +66,13 @@ Frontend -Angular
 4.To Run Angular Application 
     `ng serve`
 
-MySql Database
+### MySql Database
 1.To Create Database 
     `Create Database <database_name>`
 2.Use Database
     `use <database_name>
 
-Backend_Springboot 
+### Backend_Springboot 
 1.To Create Sprigboot project
     `https://start.spring.io/`
 2.Add valid artifact Id and Details
@@ -92,7 +88,7 @@ Backend_Springboot
 
 **# API Endpoints**
 
-Endpoints for the Employee Management application.
+### Endpoints for the Employee Management application.
 
 - Create Employee POST(`http://localhost:8081/hostbooks-app/v1/employee/addEmployee`)
     Sample Data :
@@ -117,7 +113,7 @@ Add additional notes about how to deploy this on a live system.
 
 **# Authors**
 
-- **Kiran Kumar Sahoo** - *Initial work* - **[kieransahoo](https://github.com/kieransahoo)**
+- **Kiran Kumar Sahoo** - **[kieransahoo](https://github.com/kieransahoo)**
 
 ---
 **# Sample Video**
