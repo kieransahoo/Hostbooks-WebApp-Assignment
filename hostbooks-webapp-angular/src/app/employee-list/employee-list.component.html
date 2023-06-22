@@ -1,0 +1,27 @@
+<h2 style="text-align: center;">Employee List</h2>
+<div class="container">
+    <button class="btn btn-primary" ><a style="color: white; text-decoration: none;" routerLink="/addEmployee" routerLinkActive="active" ariaCurrentWhenActive="page">Add Employee</a></button>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                
+                <th >First Name</th>
+                <th >Last Name</th>
+                <th >Email</th>
+                <th class="th">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let employee of employees">
+                <td>{{employee.firstName}}</td>
+                <td>{{employee.lastName}}</td>
+                <td>{{employee.email}}</td>
+                <td id="td-action" >
+                    <button (click)="updateEmployee(employee)" class="btn btn-primary">Update</button>
+                    <button (click)="deleteEmployee(employee.employeeId)" class="btn btn-danger">Delete</button>
+                    <button (click)="viewEmployee(employee.employeeId)" class="btn btn-info">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

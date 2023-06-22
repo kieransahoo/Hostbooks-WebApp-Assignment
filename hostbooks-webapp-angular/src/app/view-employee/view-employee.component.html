@@ -1,0 +1,21 @@
+<h2 style="text-align: center;">Employee Details</h2>
+<hr>
+<div id="list-btn" class="container">
+    <button class="btn btn-primary" ><a style="color: white; text-decoration: none;" routerLink="/all" routerLinkActive="active" ariaCurrentWhenActive="page">Employee List</a></button>
+    <button class="btn btn-primary" style="margin-left: 12px;"><a style="color: white; text-decoration: none;" routerLink="/addEmployee" routerLinkActive="active" ariaCurrentWhenActive="page">Add Employee</a></button>
+</div>
+<div class="container">
+    
+    <div>
+        <strong>Employee Id :</strong> {{employee.employeeId}}
+    </div>
+    <div>
+        <strong>Employee First Name :</strong> {{employee.firstName}}
+    </div>
+    <div>
+        <strong>Employee Last Name :</strong> {{employee.lastName}}
+    </div>
+    <div>
+        <strong>Employee Email Id :</strong> {{employee.email}}
+    </div>       
+</div>

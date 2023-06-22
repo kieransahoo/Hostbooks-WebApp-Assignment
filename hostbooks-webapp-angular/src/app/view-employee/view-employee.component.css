@@ -1,0 +1,12 @@
+.container:last-child{
+    margin: auto;
+    width: 60%;
+    border:1px solid;
+    padding: 12px;
+    margin-top: 24px;
+}
+.container{
+    margin: auto;
+    width: 60%;
+    
+}
