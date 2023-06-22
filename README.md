@@ -1,11 +1,10 @@
 # Hostbooks-WebApp-Assignment
 Hostbooks Web-App Test
 
-**# Hostbooks-WebApp-Assignment**
-Hostbooks Web-App Test
+Sample Website : [Deployed-sample-website](https://hostbooks-webapp-test.netlify.app/all)
 ---
 
-**# Table of Contents**
+## Table of Contents
 
 1. Getting Started
 2. Prerequisites
@@ -18,13 +17,13 @@ Hostbooks Web-App Test
 
 ---
 
-**# Getting Started**
+## # Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ---
 
-**# Prerequisites**
+## # Prerequisites
 
 1. Java Development Kit (JDK): Install the latest JDK on your machine. Spring Boot requires Java to run.
 
@@ -39,7 +38,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ---
 
-**# Installation**
+##  # Installation
 
 ### For Backend Springboot-Angular :
 1) Clone this repository to local machine and open file location (HostbooksWeb-app)
@@ -50,11 +49,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### For Frontend-Angular
 1. open file location `cd hostbooks-webapp-angular`
 2. run using command `ng serve`
-
+   
 Note : Run Springboot application and then angular application in your preffered IDE
 ---
 
-**# Usage**
+##  # Usage
 
 ### Frontend -Angular
 1. To install angular globally(cli.angular.io)
@@ -86,37 +85,42 @@ Note : Run Springboot application and then angular application in your preffered
 
 ---
 
-**# API Endpoints**
+##  # API Endpoints
 
 ### Endpoints for the Employee Management application.
 
-- Create Employee POST(`http://localhost:8081/hostbooks-app/v1/employee/addEmployee`)
+- Create Employee POST(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/addEmployee`)
     Sample Data :
         ```{
             "firstName": "ABC",
             "lastName": "XYZ",
             "email": "abcxyz@email.com"
         }```
-- List Employee GET(`http://localhost:8081/hostbooks-app/v1/employee/all`)
-- Update Employee PUT(`http://localhost:8081/hostbooks-app/v1/employee/updateEmployee`)
-- Delete Employee DELETE(`http://localhost:8081/hostbooks-app/v1/employee/deleteEmployee/${id}`)
-- View Employee GET(`http://localhost:8081/hostbooks-app/v1/employee/getEmployee/${id}`)
+- List Employee GET(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/all`)
+- Update Employee PUT(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/updateEmployee`)
+- Delete Employee DELETE(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/deleteEmployee/${id}`)
+- View Employee GET(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/getEmployee/${id}`)
 
 
 ---
 
-**# Deployment**
+##  # Deployment
 
-Add additional notes about how to deploy this on a live system.
+### Backend Deployment 
+   - Deployed using Railwayapp
+      [Sample API :API_Endpoint for All Employees](https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/all)
+### Frontend Deployment
+   - Deployed using Netlify
+     [Netlify Link : Hostbooks-webapp-test](https://hostbooks-webapp-test.netlify.app/)
 
 ---
 
-**# Authors**
+##  # Authors
 
 - **Kiran Kumar Sahoo** - **[kieransahoo](https://github.com/kieransahoo)**
 
 ---
-**# Sample Video**
+##  # Sample Video
 
 ```
 markdownCopy code
