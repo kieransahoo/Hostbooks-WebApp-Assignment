@@ -25,7 +25,7 @@ export class EmployeeListComponent implements OnInit{
   }
 
   updateEmployee(employee:Employee){
-    this.router.navigate(['updateEmployee',employee]);
+    this.router.navigate(['employees/update',employee]);
   }
   deleteEmployee(id:number){
     this.employeeService.deleteEmployee(id).subscribe(data=>{
@@ -34,7 +34,7 @@ export class EmployeeListComponent implements OnInit{
     })
   }
   viewEmployee(id:number){
-    this.router.navigate(['viewEmployee',id]);
+    this.router.navigate(['employees',id]);
   }
    
 }

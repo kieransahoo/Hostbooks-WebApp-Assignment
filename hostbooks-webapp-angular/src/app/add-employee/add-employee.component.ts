@@ -21,7 +21,7 @@ export class AddEmployeeComponent {
     // console.log(this.employee);
       this.employeeService.addEmployee(this.employee).subscribe(data => {
       console.log(data);
-      this.router.navigate(['/all']);
+      this.router.navigate(['/employees']);
     })
     
   }
