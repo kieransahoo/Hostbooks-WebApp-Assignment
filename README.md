@@ -1,7 +1,7 @@
 # Hostbooks-WebApp-Assignment
 Hostbooks Web-App Test
 
-Sample Website : [Deployed-sample-website](https://hostbooks-webapp-test.netlify.app/all)
+Sample Website : [Deployed-sample-website](https://hostbooks-webapp-test.netlify.app/)
 ---
 
 ## Table of Contents
@@ -94,17 +94,17 @@ Note : Run Springboot application and then angular application in your preffered
 
 ### Endpoints for the Employee Management application.
 
-- Create Employee POST(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/addEmployee`)
+- Create Employee POST(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employees`)
     Sample Data :
         ```{
             "firstName": "ABC",
             "lastName": "XYZ",
             "email": "abcxyz@email.com"
         }```
-- List Employee GET(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/all`)
-- Update Employee PUT(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/updateEmployee`)
-- Delete Employee DELETE(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/deleteEmployee/${id}`)
-- View Employee GET(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/getEmployee/${id}`)
+- List Employee GET(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employees`)
+- Update Employee PUT(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employees`)
+- Delete Employee DELETE(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employees/${id}`)
+- View Employee GET(`https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employees/${id}`)
 
 
 ---
@@ -113,7 +113,7 @@ Note : Run Springboot application and then angular application in your preffered
 
 ### Backend Deployment 
    - Deployed using Railwayapp
-      [Sample API :API_Endpoint for All Employees](https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/all)
+      [Sample API :API_Endpoint for All Employees](https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employees)
 ### Frontend Deployment
    - Deployed using Netlify
      [Netlify Link : Hostbooks-webapp-test](https://hostbooks-webapp-test.netlify.app/)
