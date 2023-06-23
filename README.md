@@ -20,6 +20,11 @@ Sample Website : [Deployed-sample-website](https://hostbooks-webapp-test.netlify
 ## # Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+- Clone Repo
+- Change application Properties(Springboot)
+- Run on local System
+- Now Run the Angular Application
+Check Installation heading for more clearity 
 
 ---
 
@@ -122,12 +127,9 @@ Note : Run Springboot application and then angular application in your preffered
 ---
 ##  # Sample Video
 
-```
-markdownCopy code
-[![Demo Video](http://img.youtube.com/vi/VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO_ID "Demo Video")
 
-```
+[Application Demo Video](https://drive.google.com/file/d/1f8-i_zbozl-2WK9p4t3fAtgykhDC4M8j/view?usp=sharing)
 
-Just replace **`VIDEO_ID`** with the ID of your YouTube video.
+
 
 
