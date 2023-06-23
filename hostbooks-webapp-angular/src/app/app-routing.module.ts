@@ -7,10 +7,10 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 
 const routes: Routes = [
-  {path:'all',component:EmployeeListComponent},
-  {path :'addEmployee',component:AddEmployeeComponent},
-  {path :'updateEmployee',component:UpdateEmployeeComponent},
-  {path :'viewEmployee/:employeeId',component:ViewEmployeeComponent},
+  {path:'employees',component:EmployeeListComponent},
+  {path :'employees',component:AddEmployeeComponent},
+  {path :'employees',component:UpdateEmployeeComponent},
+  {path :'employees/:employeeId',component:ViewEmployeeComponent},
   {path: '', redirectTo: 'all', pathMatch: 'full'}
   
 ];

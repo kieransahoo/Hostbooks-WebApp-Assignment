@@ -11,38 +11,38 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/hostbooks-app/v1/employee")
+@RequestMapping("/hostbooks-app/v1")
 @CrossOrigin
 public class EmployeeController {
 
     @Autowired
     private EmployeeService employeeService;
 
-    @PostMapping("/addEmployee")
+    @PostMapping("/employees")
     public ResponseEntity<Employee> addNewEmployeeHandler(@RequestBody Employee employee){
         Employee newEmployee = employeeService.addNewEmployee(employee);
         return new ResponseEntity<>(newEmployee, HttpStatus.CREATED);
     }
 
-    @GetMapping("/all")
+    @GetMapping("/employees")
     public ResponseEntity<List<Employee>>getAllEmployees() throws EmployeeException {
         List<Employee> employeeList = employeeService.getAllEmployees();
         return new ResponseEntity<>(employeeList,HttpStatus.OK);
     }
 
 
-    @GetMapping("/getEmployee/{id}")
+    @GetMapping("/employees/{id}")
     public ResponseEntity<Employee> getEmployeeByIdHandler(@PathVariable("id") Integer employeeId) throws EmployeeException {
         Employee getEmployee = employeeService.getEmployeeById(employeeId);
         return new ResponseEntity<>(getEmployee,HttpStatus.OK);
     }
 
-    @PutMapping("/updateEmployee")
+    @PutMapping("/employees")
     public ResponseEntity<Employee> updateEmployee(@RequestBody Employee employee) throws EmployeeException{
         Employee updateEmployee = employeeService.updateEmployee(employee);
         return new ResponseEntity<>(updateEmployee,HttpStatus.OK);
     }
-    @DeleteMapping("/deleteEmployee/{id}")
+    @DeleteMapping("/employees/{id}")
     public ResponseEntity<Employee>deleteEmployee(@PathVariable("id") Integer employeeId) throws EmployeeException{
         Employee deleteEmployee = employeeService.deleteEmployee(employeeId);
         return new ResponseEntity<>(deleteEmployee,HttpStatus.OK);

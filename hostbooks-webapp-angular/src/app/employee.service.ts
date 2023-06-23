@@ -12,7 +12,7 @@ export class EmployeeService {
   // private baseURL = "http://localhost:8081/hostbooks-app/v1/employee";
 
   //If running on deployed Server(Here Deployed on Railway App)
-  private baseURL = "https://hostbooks-webapp.up.railway.app/hostbooks-app/v1/employee/"
+  private baseURL = "https://hostbooks-webapp.up.railway.app/hostbooks-app/v1"
 
   constructor(private httpClient: HttpClient) { }
   
@@ -21,7 +21,7 @@ export class EmployeeService {
    * @returns An observable of the employee list.
    */ 
   getEmployeeList(): Observable<Employee[]>{
-    return this.httpClient.get<Employee[]>(`${this.baseURL}/all`);
+    return this.httpClient.get<Employee[]>(`${this.baseURL}/employees`);
   }
 
 
@@ -31,7 +31,7 @@ export class EmployeeService {
    * @returns An observable of the added employee.
    */
   addEmployee(employee:Employee):Observable<Employee[]>{
-    return this.httpClient.post<Employee[]>(`${this.baseURL}/addEmployee`,employee);
+    return this.httpClient.post<Employee[]>(`${this.baseURL}/employees`,employee);
   }
 
   /**
@@ -40,7 +40,7 @@ export class EmployeeService {
    * @returns An observable of the employee.
    */
   getEmployee(employeeId:number):Observable<Employee>{
-    return this.httpClient.get<Employee>(`${this.baseURL}/getEmployee/${employeeId}`);
+    return this.httpClient.get<Employee>(`${this.baseURL}/employees/${employeeId}`);
   }
 
   /**
@@ -49,7 +49,7 @@ export class EmployeeService {
    * @returns An observable of the updated employee.
    */
   updateEmployee(employee:Employee):Observable<Employee[]>{
-    return this.httpClient.post<Employee[]>(`${this.baseURL}/updateEmployee`,employee);
+    return this.httpClient.post<Employee[]>(`${this.baseURL}/employees`,employee);
   }
 
   
@@ -59,6 +59,6 @@ export class EmployeeService {
    * @returns An observable of the deleted employee.
    */
   deleteEmployee(employeeId:number):Observable<Employee>{
-    return this.httpClient.delete<Employee>(`${this.baseURL}/deleteEmployee/${employeeId}`);
+    return this.httpClient.delete<Employee>(`${this.baseURL}/employees/${employeeId}`);
   }
 }
