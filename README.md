@@ -1,6 +1,20 @@
 # Hostbooks-WebApp-Assignment
 Hostbooks Web-App Test
 
+# Techstacks 
+**Backend**
+1.Java
+2.Maven(Build tool)
+3.Hibernate(ORM)
+4.Springboot
+5.MySQL(Database)
+
+**Frontend**
+1.HTML
+2.CSS
+3.Typescript
+3.Angular
+
 Sample Website : [Deployed-sample-website](https://hostbooks-webapp-test.netlify.app/)
 ---
 
